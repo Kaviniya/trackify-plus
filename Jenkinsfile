@@ -1,11 +1,10 @@
-  pipeline {
+pipeline {
     agent any
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Kaviniya/trackify-plus
-.git'
+                git branch: 'main', url: 'https://github.com/Kaviniya/trackify-plus.git'
             }
         }
 
